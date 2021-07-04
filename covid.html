@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Covid-19 Website</title>
+  <!-------google fonts---------------------------------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+  <!---bootstrapcdn and jquery scripts---------------------------------------------------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="D:\co\styles.css">
+
+</head>
+
+<body>
+
+  <!-- header section starts  -->
+
+  <header>
+
+    <a href="#" class="logo logoname">c<span class="fas fa-virus"></span>ovid-19</a>
+
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas navbtni fa-chevron-circle-down"></i>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#home">Home</a>
+        <a class="dropdown-item" href="#protect">prevent</a>
+        <a class="dropdown-item" href="#symtoms">symptoms</a>
+        <a class="dropdown-item" href="#vaccination">vaccination</a>
+      </div>
+    </div>
+    <nav class="navbar">
+
+      <ul>
+        <li><a class="btn btn-info active" href="#home" role="button"><i class="fas navbtni fa-house-user"></i>Home</a></li>
+        <li><a class="btn btn-info active" href="#protect" role="button"><i class="fas navbtni fa-shield-virus"></i>prevent</a></li>
+        <li><a class="btn btn-info active" href="#symtoms" role="button"><i class="fas navbtni fa-bezier-curve"></i>symptoms</a></li>
+        <li><a class="btn btn-info active" href="#vaccination" role="button"><i class="fas navbtni fa-syringe"></i>vaccination</a></li>
+
+      </ul>
+    </nav>
+
+
+  </header>
+
+  <!-- header section ends -->
+
+  <!-- home section starts  -->
+
+  <section class="home" id="home">
+
+    <div class="content">
+
+      <span class="covidheader">Covid-19</span>
+      <i class="homeicon fas fa-viruses"></i>
+      <h3 class="headerstaysafe">stay safe, stay home</h3>
+      <p class="covidheader">COVID-19 is a disease caused by a new strain of coronavirus. 'CO' stands for corona, 'VI' for virus, and 'D' for disease. Formerly, this disease was referred to as '2019 novel coronavirus' or '2019-nCoV.'.</p>
+
+
+    </div>
+
+    <div class="video-container">
+      <video class="homevideo" autoplay muted loop controls>
+        <source src="D:\co\Covid 19 Stay At Home .mp4" type="video/MP4">
+      </video>
+    </div>
+
+  </section>
+
+  <!-- home section ends -->
+
+  <section class="protect" id="protect">
+
+
+    <h1 class="heading">take steps to protect yourself</h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <img src="D:\co\wearmask.jpg" alt="">
+        <h3>Wear A Face Mask</h3>
+        <p>Face coverings limit the volume and travel distance of expiratory droplets dispersed when talking, breathing, and coughing. A face covering without vents or holes will also filter out particles containing the virus from inhaled and exhaled
+          air, reducing the chances of infection.</p>
+        <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks" class="btn"><i class="fas navbtni fa-search"></i>learn more</a>
+      </div>
+
+      <div class="box">
+        <img src="D:\co\wash-your-hands.png" alt="">
+        <h3>Wash Your Hands</h3>
+        <p>Frequent and proper hand hygiene is one of the most important measures that can be used to prevent infection with the COVID-19 virus. WASH practitioners should work to enable more frequent and regular hand hygiene by improving facilities
+          and using proven behavior-change techniques.</p>
+        <a href="https://www.cdc.gov/handwashing/when-how-handwashing.html" class="btn"><i class="fas navbtni fa-search"></i>learn more</a>
+      </div>
+
+      <div class="box">
+        <img src="D:\co\social.png" alt="">
+        <h3>Avoid Close Contact</h3>
+        <p> Avoiding crowded areas, using no-contact greetings, and physically distancing themselves from others. Many governments are now mandating or recommending social distancing in regions affected by the outbreak.Individuals may apply social
+          distancing methods by staying at home, limiting travel</p>
+        <a href="https://healthtalk.unchealthcare.org/what-is-social-distancing-and-why-is-it-important/" class="btn"><i class="fas navbtni fa-search"></i>learn more</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- symtoms section starts  -->
+
+  <section class="symtoms" id="symtoms">
+
+    <div class="content">
+      <h2 class="symhead">SYMPTOMS OF COVID-19</h2>
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-lg-4">
+            <div id="carouselExampleControls1" class="carousel slide firstcarosel" data-ride="carousel">
+              <div class="carousel-inner">
+                <h3 class="fchead">COMMON SYMPTOMS</h3>
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="D:\co\fever.jpg" alt="First slide">
+                  <h5 class="problems">FEVER</h5>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="D:\co\drycough.jpg" alt="Second slide">
+                  <h5 class="problems">DRY COUGH</h5>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="D:\co\tiredness.jpg" alt="Third slide">
+                  <h5 class="problems">TIREDNES</h5>
+                </div>
+              </div>
+              <a class="carousel-control-prev" data-target="#carouselExampleControls1" role="button" data-slide="prev">
+                <i class="fas fa-arrow-circle-left RLbtn"></i>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" data-target="#carouselExampleControls1" role="button" data-slide="next">
+                <i class="fas fa-arrow-circle-right RLbtn"></i>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <div id="carouselExampleControls2" class="carousel slide secondcarosel" data-ride="carousel">
+              <div class="carousel-inner">
+                <h3 class="fchead">LESS COMMON SYMPTOMS</h3>
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="D:\co\sorethroat.jpg" alt="First slide">
+                  <h5 class="problems">SORE-THROAT</h5>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="D:\co\pain.jpg" alt="Second slide">
+                  <h5 class="problems">ACHES AND PAINS</h5>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="D:\co\skinrashes.jpg" alt="Third slide">
+                  <h5 class="problems">RASHES ON SKIN</h5>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="D:\co\headache.jpg" alt="Third slide">
+                  <h5 class="problems">HEADACHE</h5>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="D:\co\taste and smell loss.jpg" alt="Third slide">
+                  <h5 class="problems">TASTE AND SMELL LOSS</h5>
+                </div>
+              </div>
+              <a class="carousel-control-prev" data-target="#carouselExampleControls2" role="button" data-slide="prev">
+                <i class="fas fa-arrow-circle-left RLbtn"></i>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" data-target="#carouselExampleControls2" role="button" data-slide="next">
+                <i class="fas fa-arrow-circle-right RLbtn"></i>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <div id="carouselExampleControls3" class="carousel slide thirdcarosel" data-ride="carousel">
+              <div class="carousel-inner">
+                <h3 class="fchead">SERIOUS SYMPTOMS</h3>
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="D:\co\difficult breathing.jpg" alt="First slide">
+                  <h5 class="problems">DIFFICULTY IN BREATHING</h5>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="D:\co\chest pain.jpg" alt="Second slide">
+                  <h5 class="problems">CHEST PAIN OR PRESSURE</h5>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="D:\co\speechloss.jpg" alt="Third slide">
+                  <h5 class="problems">LOSS OF SPEECH OR MOVEMENT</h5>
+                </div>
+              </div>
+              <a class="carousel-control-prev" data-target="#carouselExampleControls3" role="button" data-slide="prev">
+                <i class="fas fa-arrow-circle-left RLbtn"></i>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" data-target="#carouselExampleControls3" role="button" data-slide="next">
+                <i class="fas fa-arrow-circle-right RLbtn"></i>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://www.mygov.in/covid-19/" class="btn sympbtn"><i class="fas  navbtni fa-search"></i>know more</a>
+    </div>
+  </section>
+
+  <!-- symtoms section ends -->
+
+  <!-- prevent section starts  -->
+
+  <section class="vaccination" id="vaccination">
+    <div class="container">
+      <h3 class="vacchead1">LET'S FIGHT IT TOGETHER</h3>
+      <h1 class="vacchead2">PLEASE TAKE YOUR VACCINE!</h1>
+        <video class="vaccvideo" autoplay muted loop controls>
+          <source src="D:\co\vaccine video.mp4" type="video/MP4">
+        </video>
+        <img class="vacimage"src="D:\co\vaccine1.png" alt="">
+        <a class="btn btn-info active vacbtn" href="#home" role="button"><i class="fas navbtni fa-user-circle"></i>BOOK YOUR SLOT</a>
+        <span><a class="btn btn-info active vacbtn" href="#home" role="button"><i class="fas navbtni fa-search"></i>KNOW MORE</a></span>
+      </div>
+
+
+
+  </section>
+
+  <!-- prevent section ends -->
+
+  <!-- footer section starts  -->
+
+  <section class="footer">
+
+    <div class="box-container">
+      <div class="box">
+        <h3 class="footheader">contact info</h3>
+        <p class="footinfo"> <i class="fas fa-phone"></i> +917488799023 </p>
+        <p class="footinfo"> <i class="fas fa-envelope"></i> abhinavrocky7488@gmail.com </p>
+        <p class="footinfo"> <i class="fas fa-map-marker-alt"></i> Pune,Maharastra 411041 </p>
+        <div class="share">
+          <a href="#" class="fab fa-youtube"></a>
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="https://www.instagram.com/grey_w.0.l.f/" class="fab fa-instagram"></a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <h1 class="credit"> created by <a href="#"> Grey w.0.l.f </a> all rights reserved! </h1>
+
+  </section>
+
+  <!-- footer section ends -->
+
+
+
+  <!-- jquery cdn link  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- custom js file link  -->
+  <script src="D:\co\jquery.js"></script>
+
+
+</body>
+
+</html>

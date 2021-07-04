@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+:root{
+    --red:#FF4F5B;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition:all .3s cubic-bezier(.16,.8,.62,1.52);
+    text-transform: capitalize;
+}
+
+*::selection{
+    background:var(--red);
+    color:#fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width:1.3rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #000;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--red);
+}
+
+body{
+    background:#f9f9f9;
+}
+
+section{
+    min-height: 100vh;
+    padding:0 7%;
+    padding-top: 9rem;
+}
+.covidheader{
+  font-family: 'Staatliches', cursive;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:1rem 4rem;
+    border-radius: 5rem;
+    background:var(--red);
+    color:#fff;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    font-size: 1.7rem;
+}
+.navbtni
+{
+  font-size: 2.1rem;
+  padding:0.3rem;
+}
+
+.btn::before{
+    content:'';
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background:#1EAE98;
+    clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+    transition:.3s linear;
+}
+
+.btn:hover::before{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.heading{
+    font-size: 3rem;
+    color:#666;
+}
+
+.heading span{
+    color:var(--red);
+}
+
+header{
+    width:100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: fixed;
+    top:0; left: 0;
+    z-index: 1000;
+    padding:2.5rem 7%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 4rem;
+    color:var(--red);
+    font-family: 'Staatliches', cursive;
+      text-decoration: none;
+      border-right: inset #1EAE98;
+      border-bottom: inset #1EAE98;
+      border-width: thick;
+      padding: 0.5rem;
+}
+
+header .logo span{
+    color:var(--red);
+}
+header
+{
+  background-image: radial-gradient(#00ABE1,black);
+}
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header .navbar ul li{
+    margin-left: 0.8rem;
+    color: black;
+}
+
+header .navbar ul li a{
+    color:black;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: bolder;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 0.3rem;
+}
+.dropdown
+{
+  visibility:hidden;
+}
+.dropdown-menu
+{
+  background-color: var(--red);
+
+}
+.dropdown-item
+{
+  font-weight: bold;
+  font-size: 3rem;
+  border:solid black;
+  font-family: 'Staatliches', cursive;
+
+}
+
+}
+
+#menu{
+    font-size: 3rem;
+    color:#999;
+    cursor: pointer;
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    background-image:url(homepage.png);
+     background-size: cover;
+
+    }
+.homeicon
+{
+  font-size: 20vw;
+  position: relative;
+  margin-top:15%;
+  color: var(--red);
+
+}
+
+.homevideo{
+    flex:1 1 40rem;
+    width: 40vw;
+    margin: 5% 40% 0 3%;
+    padding: 2%;
+    border: outset 1rem var(--red);
+}
+
+.home .image img{
+    width:100%;
+}
+
+.home .content{
+    flex:1 1 40rem;
+
+}
+
+.home .content span{
+    color:var(--red);
+    font-size: 3rem;
+}
+
+.home .content h3{
+    color:var(--red);
+    font-size: 5rem;
+    font-family: 'Staatliches', cursive;
+}
+
+.home .content p{
+    color:var(--red);
+    font-size: 2.5rem;
+    padding:1rem 0.3;
+    border-top: outset var(--red);
+}
+.protect
+{
+  background-image: url(unibg.jpg);
+  background-size: cover;
+
+}
+
+.protect .heading{
+    text-align: center;
+    padding:1rem;
+    font-family: 'Patua One', cursive;
+    color: var(--red);
+
+}
+
+.protect .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.protect .box-container .box{
+    background:#3d3d3d;
+    border:.1rem solid rgba(0,0,0,.1);
+    padding:1rem;
+    margin:2rem 2rem 10rem 2rem;
+    width:34rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    text-align: center;
+}
+
+.protect .box-container .box img{
+    height: 24rem;
+    width:30rem;
+}
+
+.protect .box-container .box h3{
+    font-size: 2.5rem;
+    color:var(--red);
+    padding:1rem 0;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 0.1rem;
+}
+
+.protect .box-container .box p{
+    font-size: 1.4rem;
+    color:#999;
+    padding:.5rem;
+
+    letter-spacing: 0.1rem;
+    word-spacing: 0.01rem;
+    text-align:left;
+
+}
+
+.protect .box-container .box:hover{
+    transform:translateY(-1rem);
+}
+
+.symtoms{
+    background-image: url(unibg.jpg);
+    background-size: cover;
+}
+.symhead
+{
+  text-align: center;
+  padding:1rem;
+  font-family: 'Patua One', cursive;
+  color: var(--red);
+  font-size: 3.2vw;
+  margin-top: 5%;
+}
+.fchead
+{
+  font-family: 'Patua One', cursive;
+  color: var(--red);
+  text-align: center;
+}
+.firstcarosel,.secondcarosel,.thirdcarosel
+{
+  margin-top:10%;
+  border: inset thick var(--red);
+}
+.problems
+{
+  color:var(--red);
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.sympbtn{
+  margin-left: 34vw;
+}
+.RLbtn
+{
+  color: var(--red);
+  font-size: 3rem;
+}
+
+.vaccination{
+    background-image:url(unibg.jpg);
+    background-size: cover;
+    text-align: center;
+}
+.vaccvideo
+{
+  width: 55%;
+  position: relative;
+  left: 38%;
+  top: 0.5%;
+  padding: 1.4%;
+  border: outset 1rem var(--red);
+}
+
+.vacchead1
+{
+  padding:1rem;
+  font-family: 'Patua One', cursive;
+  color: var(--red);
+  font-size: 2.4vw;
+  margin-top: 2.5%;
+  border-bottom: inset var(--red);
+}
+.vacchead2
+{
+  padding:1rem;
+  font-family: 'Patua One', cursive;
+  color: var(--red);
+  font-size: 3vw;
+  margin-top: 0%;
+}
+.vacimage
+{
+  position: relative;
+  margin-bottom: 20%;
+  right:60%;
+  width:30vw;
+}
+.vacbtn
+{
+font-family: 'Staatliches', cursive;
+letter-spacing: 0.1rem;
+}
+
+.footer{
+    min-height: auto;
+    padding-top: 0;
+    background:#333;
+}
+
+.footer .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footheader
+{
+  padding:1rem;
+  font-family: 'Patua One', cursive;
+  color: var(--red);
+  font-size: 2.7vw;
+}
+.footer .box-container .box{
+    flex:1 1 25rem;
+    margin:2rem;
+}
+
+
+.footinfo
+{
+  font-size: 0.8vw;
+  color: white;
+  text-transform: lowercase;
+}
+
+.footer .box-container .box p i{
+    padding-right: 1rem;
+    color:var(--red);
+}
+
+.footer .box-container .box a{
+    font-size: 1.5rem;
+    color:#ccc;
+    padding:1rem 0;
+    display: block;
+}
+
+.footer .box-container .box a:hover{
+    color:var(--red);
+}
+
+.footer .box-container .box .share{
+    display: flex;
+    flex-wrap: wrap;
+    padding:1rem 0;
+}
+
+.footer .box-container .box .share a{
+    height:4rem;
+    width:4rem;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 5rem;
+    border:.1rem solid #fff3;
+    margin-right: 1rem;
+}
+
+.footer .box-container .box .share a:hover{
+    background:#fff;
+}
+
+.footer .credit{
+    padding:2rem 1rem;
+    text-align: center;
+    color:#fff;
+    font-weight: normal;
+    font-size: 2rem;
+    border-top: .1rem solid #fff3;
+}
+
+.footer .credit a{
+    color:var(--red);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    .homevideo
+    {
+      width:80%;
+      margin-left: 10%;
+    }
+}
+
+@media (max-width:768px){
+
+    #menu{
+        display: block;
+    }
+.dropdown
+{
+  visibility: visible;
+}
+.vaccvideo
+{
+  width: 60%;
+}
+    header .navbar{
+        position: fixed;
+        top:8rem; left:-120%;
+        height: 100%;
+        width:100%;
+        background:#eee;
+        border-top: .2rem solid rgba(0,0,0,.1);
+    }
+
+    header .navbar ul{
+        flex-flow: column;
+        padding:2rem;
+    }
+
+    header .navbar ul li{
+        text-align: center;
+        width:100%;
+        margin:1rem 0;
+    }
+
+    header .navbar ul li a{
+        display: block;
+        padding:1rem;
+    }
+
+    header .navbar ul li a.active,
+    header .navbar ul li a:hover{
+        padding:1rem;
+        background:var(--red);
+        color:#fff;
+        border:none;
+        border-radius: 5rem;
+    }
+
+    .homevideo
+    {
+      width:80%;
+      margin-left: 10%;
+    }
+    .home .content{
+        text-align: left;
+    }
+
+    .prevent .row:last-child{
+        flex-flow: column-reverse;
+    }
+
+}
+
+@media (max-width:500px){
+
+    html{
+        font-size: 50%;
+    }
+
+    section{
+        padding:0 3%;
+        padding-top: 9rem;
+    }
+
+}
